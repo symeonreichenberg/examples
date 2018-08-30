@@ -1,4 +1,12 @@
 <?php
+/*
+ * This is a part of project named XCounter. Used to create animated GIFs for mailing. 
+ * The user selects the form to counters when the counter is counted, sets fonts, colors, backgrounds, etc. 
+ * The final recipient of the mail displays a GIF that counts 60 seconds after opening the message. 
+ * The counter is called when it is opened by the end user. First, find out if this GIF already exists in the directory for that particular minute. 
+ * If so, then apply, if not, a new one is created.
+ * This app is multilingual, result can be viewed in almost 40 languages.
+ */
 for ($i = 0; $i <= $max_frames; $i++) {
 $interval = date_diff($future_date, $now);	
 
