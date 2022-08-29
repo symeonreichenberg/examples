@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ostrov olihní</title>
+		<meta name="description" content="Ostrov olihní je larp žánrově zařaditelný mezi drama, thriller a&nbsp;horor"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+		<link rel="manifest" href="/site.webmanifest"/>
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
+		<meta name="msapplication-TileColor" content="#da532c"/>
+		<meta name="theme-color" content="#ffffff"/>
+		<link rel="stylesheet" href="./css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="./css/animate.min.css"/>
+		<link rel="stylesheet" href="./css/ionicons.min.css"/>
+		<link rel="stylesheet" href="./css/styles.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+		<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"/>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet"/>
+	</head>
+	<body>
+		<audio id="winter" controls autoplay loop class="d-none"><source src="./mp3/winter.mp3" type="audio/mpeg"/>Your browser does not support the audio element.</audio>
+		<canvas id="sky" class="d-none"></canvas>
+		<div id="snow-toggler" onclick="playAudio()"></div>
+		<nav id="nav" class="nav navbar navbar-expand-lg fixed-top">
+			<div class="container justify-content-lg-between justify-content-center align-items-center">
+				<a href="#ohre" class="navbar-brand"><img id="logo" src="./img/logo-white.svg" class="logo mb-lg-0 mb-4"/></a>
+				<div class="" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link menu-header dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item page-scroll" href="#doba">Doba a&nbsp;atmosféra</a></li>
+							<li><a class="dropdown-item page-scroll" href="#styl">Styl hry</a></li>
+							<li><a class="dropdown-item page-scroll" href="#temata">Témata</a></li>
+							<li><a class="dropdown-item page-scroll" href="#expedice">Expedice</a></li>
+							<li><a class="dropdown-item page-scroll" href="#prakticke">Praktické</a></li>
+							<li><a class="dropdown-item page-scroll" href="#registrace">Registrace a&nbsp;role</a></li>
+							<li><a class="dropdown-item page-scroll" href="#tym">Tým</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<header id="home" class="bg-dark">
+			<div class="row align-items-lg-stretch align-items-start">
+				<div class="col-lg-8 col-12 bg-header"></div>
+				<div class="col-lg-4 col-12 align-self-lg-center align-self-start position-relative quotes" style="z-index: 999;">
+					<a href="#ohre">
+						<p id="quote" class="p-5"></p>
+						<!--<p id="location" class="p-5">Ostrov olihní / xx. 3. 2023 / Základna XXX</p>-->
+					</a>
+				</div>
+			</div>
+		</header>
+		<section class="bg-dark py-5">
+			<a class="anchor" id="ohre"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/ohre.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<p>Ostrov olihní je larp žánrově zařaditelný mezi drama, thriller a&nbsp;horor. Odlehlé místo konání, zasněžená krajina a&nbsp;realistické (nebo chvílemi až surreálné) rekvizity vás, doufáme, naladí na zamýšlenou atmosféru hry. Obsahově bude mít hra dvě těžiště - komunikace mezi jednotlivými frakcemi a&nbsp;konflikt s&nbsp;prostředím. Hra bude relativně fyzicky náročná, je třeba počítat s&nbsp;cca 5-10 km chůze denně v&nbsp;ne úplně jednoduchém terénu, případně i&nbsp;s dalšími fyzickými aktivitami (airsoft, krátký běh, lezení po menším stromě a&nbsp;pod.). Je možné se průběžně vracet do vyhřáté budovy, nečeká vás tedy celý den venku v&nbsp;mrazu, nicméně se stále jedná o&nbsp;skautskou základnu s&nbsp;kamínky, takže komfort tomu bude odpovídat.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light py-5">
+			<a class="anchor" id="doba"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12 order-lg-2 order-1">
+						<img src="./img/sections/doba.jpg" class="w-100 py-5 ps-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12 order-lg-1 order-2">
+						<h1>Doba a&nbsp;atmosféra</h1>
+						<p>V roce 1957 se na malý sopečný ostrůvek v&nbsp;Aleutském souostroví vydávají současně dvě expedice - americká a&nbsp;sovětská. "Ostrov olihní" je od doby druhé světové války hlášený jako opuštěný, na pobřeží zbyla pouze prázdná japonská základna. Obě výpravy doufají, že dorazí jako první na vrchol ostrova a&nbsp;prohlásí ho za zabraný ve jménu své vlasti. Všechny zúčastněné ale čeká nejen zima, nepohodlí a&nbsp;snad i&nbsp;obavy z&nbsp;účastníků druhé výpravy, ale také výzvy, na které nebyli a&nbsp;ani nemohli být připraveni.</p>
+						<p><em>„Takže jsme opět na výpravě! Teď jsme seděli v&nbsp;místnosti 531 - vlastně ne všichni jsme seděli, samozřejmě - a&nbsp;horečnatě kontrolovali vybavení a&nbsp;nahazovali přeplněné batohy na záda. Velitel stojí a&nbsp;dívá se, aby nikdo tu nikdo nic nenechal. Kde je můj kabát? Téměř jsme zapomněli sněžnice! Vzrušení ve vzduchu je skoro hmatatelné. Vyrážíme! Zítra už bude konečně vše na nás.“</em></p>
+						<p><em>„Unavení a&nbsp;vyčerpaní jsme připravili nocležiště. Dřeva je málo. Neduživé syrové jedle. Táborák jsme rozdělali na dřevech, protože se nám nechtělo kopat díru. Večeříme přímo ve stanu. Teplo. Je těžké si představit takový komfort někde na hřebeni, s&nbsp;pronikavým vytím větru, stovky kilometrů od obydlených míst.“</em></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-5">
+			<a class="anchor" id="styl"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/styl.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h1>Styl hry</h1>
+						<p>Ostrov olihní je dramatický larp. Hra probíhá nepřetržitě od pátečního odpoledne (cca 15:00) do sobotního večera (cca 21:00). Během hry se nevystupuje z&nbsp;role vyjma výjimečných závažných důvodů.</p>
+						<p>Hra pracuje s&nbsp;určitou mystičností a&nbsp;surreálností. Na workshopech budete instruováni ohledně specifik této hry. Ačkoli mohou jít proti obecným zvyklostem českého dramatického larpu, je třeba je respektovat, aby hra fungovala. Hra je primárně, i&nbsp;když ne výhradně, stavěna jako play to lose.</p>
+						<p>Ostrov olihní obsahuje výhradně plné postavy, hráč vždy reprezentuje jednu a&nbsp;tu samou roli, “dvojpostavy” nebo “jednoaktovky” tedy na této hře nehrajete.</p>
+						<p>Hra obsahuje deset ženských a&nbsp;deset mužských postav. Crossgender není možný.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light py-5">
+			<a class="anchor" id="temata"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12 order-lg-2 order-1">
+						<img src="./img/sections/temata.jpg" class="w-100 py-5 ps-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12 order-lg-1 order-2">
+						<h1>Témata</h1>
+						<p>Ostrov olihní výrazně pracuje s&nbsp;tématem smrti, násilí a&nbsp;určité míry fyzické náročnosti, která je pevnou součástí hry. Pokud je pro vás některé z&nbsp;těchto témat silně diskomfortní, doporučujeme se na hru spíš nehlásit. Pokud si nejste jistí (například je pro vás v&nbsp;pořádku smrt manžela, ale už ne dítěte), přihlaste se, a&nbsp;v dotazníku nám vyplňte, s&nbsp;čím byste se nechtěli setkat. Je možné, že se toto téma v&nbsp;daném aspektu na hře vůbec nevyskytne.</p>
+						<p>Současně má být hra o&nbsp;pevných vazbách mezi postavami, vzájemné podpoře a&nbsp;hledání a&nbsp;nacházení podpory i&nbsp;nečekaných spojenectví.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-5">
+			<a class="anchor" id="expedice"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/expedice.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h1>Expedice</h1>
+						<p>Hra obsahuje dvacet postav a&nbsp;je rozdělena do dvou výprav po deseti osobách. Výpravy pocházejí z&nbsp;USA a&nbsp;SSSR.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light py-5" id="americka">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12 order-lg-2 order-1">
+						<img src="./img/sections/usa.jpg" class="w-100 py-5 ps-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12 order-lg-1 order-2">
+						<h2>Americká expedice</h2>
+						<p><em id="usa"></em></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light py-5">
+			<div class="container">
+				<div class="row align-items-start">
+					<div class="col-lg-6 col-12 px-lg-5 px-2">
+						<h3>Velitelka</h3>
+						<p class="name">Penelope Q. Carter</p>
+						<p class="quote">Život je poslání. Co jiného by také měl být? Jednoho dne nás jistě bude Bůh soudit na nebesích, ale do té doby si musíme poradit sami a&nbsp;pracovat na sobě, jak nejlépe dovedeme.</p>
+						<h3>Zástupce velitelky</h3>
+						<p class="name">Oliver P. Umberwood</p>
+						<p class="quote">Když jsme konfrontováni se smrtí, říkáme si většinou, že mně se to stát nemůže. Ne teď. Ne v&nbsp;nejbližších dnech. Ale jak si můžeme být jistí, že to nenastane? A&nbsp;není jistota blížícího se konce nakonec lepší než nekonečný pád do králičí nory, abyste se pak náhle a&nbsp;bez varování roztříštili o&nbsp;její dno?</p>
+						<h3>Vědec</h3>
+						<p class="name">Robert S. Carter</p>
+						<p class="quote">Nenamlouvejme si, že jsou úmrtí, na kterých záleží méně než na jiných. Vždyť když nic jiného, všichni po sobě zanecháváme své milované, vzpomínky, strasti i&nbsp;naděje. Všichni jsme se narodili nevinní. Smrt byť jediného člověka je tragédií, proti které bychom nikdy neměli přestat bojovat.</p>
+						<h3>Antropolog</h3>
+						<p class="name">Johannes Rossmann</p>
+						<p class="quote">Řeči o&nbsp;smrtelnosti, to je dojemné, ale proč se mě nezeptáte na můj výzkum?</p>
+						<h3>Lékař</h3>
+						<p class="name">Eugene F. Pomeroy</p>
+						<p class="quote">Když uvidíte umírat dost lidí, zvyknete si, to ví asi každý. Ale víte, co je zajímavé? I&nbsp;jako lékař můžete vítat smrt nepřátel s&nbsp;radostí. Ostatně, oni si pro vás nepřáli nic jiného.</p>
+					</div>
+					<div class="col-lg-6 col-12 px-lg-5 px-2">
+						<h3>Zdravotní sestra</h3>
+						<p class="name">Ruby S. Fanucci</p>
+						<p class="quote">Já myslím, že v&nbsp;tomhle rozděleném světě plném utrpení je jen jediná jistota - Spojené státy americké a&nbsp;jejich nikdy neutuchající boj za svobodu. Za svobodu a&nbsp;spravedlnost pro všechny. Bůh ochraňuj Ameriku! Bez ní by bylo lidstvo ztraceno.</p>
+						<h3>Dokumentátorka</h3>
+						<p class="name">Elvira P. Prince</p>
+						<p class="quote">Hlavním úkolem dokumentátora je především stát dost blízko, aby mohl všechno zaznamenat, ale zároveň dost daleko, aby mohl zprávu předat lidstvu. Asi tušíte, že je občas dost složité to vyvážit, ale to máte tak - když máte špatné záběry, můžete se později pokusit o&nbsp;lepší. Když jste mrtví, už to spíš nespravíte.</p>
+						<h3>Sponzor podniku</h3>
+						<p class="name">Samuel T. Zimmer</p>
+						<p class="quote">Víte, co vás nejlépe ochrání před smrtí podchlazením nebo vyčerpáním? Zimmerovo špičkové vybavení! Vážně, nenechte se zlákat podvodnými rádobyodborníky, za ty omrzliny to nestojí. A&nbsp;navíc - při koupi kompletní výstroje dostanete i&nbsp;slevu na další nákup!</p>
+						<h3>Odborná poradkyně pro polární expedice</h3>
+						<p class="name">Victoria Winifred Blackman</p>
+						<p class="quote">Je skutečně zajímavé, jak různé společnosti vnímají téma smrti a&nbsp;umírání. Je zřejmě lidskou přirozeností se skonu obávat, ale některé domorodé kmeny se tomu všemu dokázaly postavit čelem překvapivě mnohem lépe než naše kultura. Myslím, že právě u&nbsp;těchto primitivů můj muž získal sílu žít plný život až do konce. Kéž bych to jednoho dne dokázala také.</p>
+						<h3>Novinář</h3>
+						<p class="name">Dante E. Soiu</p>
+						<p class="quote">Lidské bytí! Pochodeň čekající na onu příslovečnou jiskru, která ji rozžehne ve spalující plamen a&nbsp;osvětlí tmu, kterou tápou naše nevidomé schránky. Hrom, který čeká na blesk, který uvede jeho hřmění v&nbsp;život! Nebo… nebo tak nějak bych to přinejmenším napsal do novin. I&nbsp;když pravda už se v&nbsp;dnešní době příliš nenosí.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-5" id="sovetska">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/sssr.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h2>Sovětská expedice</h2>
+						<p><em id="sssr"></em></p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-5">
+			<div class="container">
+				<div class="row align-items-start">
+					<div class="col-lg-6 col-12 px-lg-5 px-2">
+						<h3>Velitel</h3>
+						<p class="name">Dimitrij Evgeniovič Fanin</p>
+						<p class="quote">Práce! Vlast! Lid! Co chcete slyšet víc? Náš vlastní život je bezvýznamný, jenom ozubené kolečko v&nbsp;soustrojí budování dokonalého společenství.</p>
+						<h3>Zástupkyně velitele</h3>
+						<p class="name">Raisa Stepanovna Starceva</p>
+						<p class="quote">Život, to je především láska. Pokud nemáte pro koho žít, není vaše existence příliš odlišná od smrti. Jen přežíváte, dokud neztrouchniví i&nbsp;vaše maso a&nbsp;vy konečně neumřete.</p>
+						<h3>Politická komisařka</h3>
+						<p class="name">Olga Pavlovna Nosova</p>
+						<p class="quote">Smrt není děsivá, pokud je smysluplná. Za války nebo ještě předtím, za časů boje o&nbsp;naši vlastní svobodu, tehdy jsem se jí neobávala, tehdy jsem chápala, za co bych svůj život položila. Nyní si ale už nejsem tak jistá.</p>
+						<h3>Vědkyně</h3>
+						<p class="name">Eva Rožkova</p>
+						<p class="quote">Jak obtížně je pro nás představitelný náš vlastní zánik! Jak směšně mrháme časem, který nám byl propůjčen! Vždyť život, naše vlastní nepravděpodobná existence, unikátní shluk buněk, který tvoří naše já, je určen k&nbsp;žití - teď a&nbsp;pak už nikdy více.</p>
+						<h3>Etnolog</h3>
+						<p class="name">Ivan Josifovič Petriashvili</p>
+						<p class="quote">Jasné, jeden dělá, co umí. Jak by to taky mělo být jinak? Jsou hrdinové, jsou vůdci, jsou vědci a&nbsp;pak jsou ti ostatní. Ale jestli chcete slyšet můj názor, hrdinové to mají nejhorší. Vždycky umírají jako první.</p>
+					</div>
+					<div class="col-lg-6 col-12 px-lg-5 px-2">
+						<h3>Lékařka</h3>
+						<p class="name">Jekatěrina Kirillovna Pečkova</p>
+						<p class="quote">Pro člověka je docela přirozené obávat se konce. Ale dokud jsem tu já, dýchající a&nbsp;na nohou, budu stát mezi lidstvem a&nbsp;smrtí. Nikdy jí neuhnu z&nbsp;cesty.</p>
+						<h3>Zdravotní bratr</h3>
+						<p class="name">Nikolaj Osipovič Umskij</p>
+						<p class="quote">Viděl jsem umírat mnoho lidí. Netěšilo mě to, ale zvykl jsem si. Smrt totiž vycítíte jednoduše, víte? Člověku ji poznáte na obličeji. I&nbsp;tak, po všech těch letech, je ale zvláštní vidět tu tvář ve vlastním odrazu.</p>
+						<h3>Dokumentátorka</h3>
+						<p class="name">Alexandra Bogdanovna Karenska</p>
+						<p class="quote">Vás nefascinuje lidský život? Tak malý v&nbsp;měřítku všehomíra a&nbsp;přitom tak působivý! A&nbsp;nejen život, ale i&nbsp;skon. Ano, mnoho umělců se ho už pokusilo zachytit přede mnou. Já ale nebudu opakovat jejich chyby. Oni se ve svém pomýlení zaměřovali na dekadentní boháče či naopak vyvrhely na okraji lidské společnosti. V&nbsp;ohnisku mého díla musí stanout člověk blízký našim srdcím - člověk pracující.</p>
+						<h3>Čestný host</h3>
+						<p class="name">Lada Michailovna Pavlenko</p>
+						<p class="quote">Ve Velké vlastenecké válce jsem čelila smrti v&nbsp;tisíci podobách. Smrt mě neděsí. Jediné, čeho se obavám, je, že jednoho dne už nebudu mít sílu bojovat.</p>
+						<h3>Expert na přežití</h3>
+						<p class="name">Konstantin Leonič Zajcev</p>
+						<p class="quote">Když člověk prochází polární pustinou, vše je najednou jednodušší a&nbsp;jasnější. Vše, na čem záleží, je dobrá příprava na začátku a&nbsp;pak jen každý jeden další krok, který děláte. Když se tohoto držíte, je velká šance, že se vám smrt vyhne a&nbsp;vy se v&nbsp;pořádku vrátíte do civilizace. I&nbsp;když tam na vás vůbec nic nečeká a&nbsp;možná by bylo lepší zůstat v&nbsp;pustině už navždy.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light pt-5">
+			<a class="anchor" id="prakticke"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col">
+						<h1>Praktické</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light pb-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12 order-lg-2 order-1">
+						<img src="./img/sections/prakticke.jpg" class="w-100 py-5 ps-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12 order-lg-1 order-2">
+						<h2>Termín: xx. 3. 2023</h2>
+						<p>Sraz na předem určené výchozí pozici pro každou výpravu bude v&nbsp;pátek v&nbsp;XX hodin, je tedy potřeba vzít si jeden den dovolené. Hře bude předcházet pár hodin nutných příprav a&nbsp;workshopů.</p>
+						<p>Samotná hra bude začínat v&nbsp;pátek v&nbsp;odpoledních hodinách a&nbsp;bude se hrát nepřetržitě do noci ze soboty na neděli. Poté bude následovat párty.</p>
+						<p>V neděli ráno pro vás budeme mít nachystanou snídani a&nbsp;po společném úklidu prostor se rozjedeme zpět do civilizace.</p>
+						<h2>Místo konání: Skautská základna XXXX</h2>
+						<p>Hra se bude konat ve vnitřních i&nbsp;vnějších prostorách. Na místě bude voda, teplo a&nbsp;jídlo, ale počítejte spíše s&nbsp;nižší úrovní komfortu, odpovídající settingu hry odehrávající se na expedici na Aleutských ostrovech uprostřed Bohem zapomenuté pustiny.</p>
+						<p>Je nutné počítat s&nbsp;tím, že na místě bude (doufáme) pravděpodobně sníh a&nbsp;přinejmenším v&nbsp;noci i&nbsp;teplota pod nulou. Na úvod hry ujdete v&nbsp;kuse cca 10 km a&nbsp;během cesty také budete mít první zastávku na jídlo, spát i&nbsp;jíst zbytek jídel ale budete už na jednom místě, kde si i&nbsp;budete moct odložit nepotřebné věci. Ty vám odvezeme na místo, stejně jako věci na spaní, pochod s&nbsp;nimi tedy absolvovat nemusíte.</p>
+						<p>Počítejte také s&nbsp;tím, že několik kilometrů nachodíte i&nbsp;v sobotu a&nbsp;počasí může být všelijaké.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/kostymy.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h2>Kostýmy a&nbsp;vybavení</h2>
+						<p>Kostým si každý hráč chystá a&nbsp;přiváží vlastní. Pro vaši inspiraci jsme připravili <a href="https://cz.pinterest.com/genauser/ostrov-olihn%C3%AD-inspirace/" target="_blank" class="link">sadu obrázků a&nbsp;rad</a>, které vám pomůžou s&nbsp;přípravou vašeho kostýmu. Vlněné oblečení nezklame nikdy, zejména svetry a&nbsp;teplé kabáty, ale doba, ve které se hra odehrává, umožňuje už i&nbsp;různé anoraky a&nbsp;prošívané bundy, pokud jste po rodičích zdědili nějaké ušité z&nbsp;plátna a&nbsp;ne z&nbsp;šusťáku.</p>
+						<p>Určitě se nebojte s&nbsp;námi konzultovat vaše nápady.</p>
+						<p>Vzhledem k&nbsp;nepředvídatelnému počasí je naprosto v&nbsp;pořádku používat moderní oblečení jako spodní vrstvy kostýmu (tak aby nebylo moc vidět, kromě obuvi). Obuv zvolte hlavně vyšší, vhodnou do mokra a&nbsp;sněhu. Vyvarujte se zářivým barvám. Doporučujeme zvážit přibalení náhradních bot, protože i&nbsp;sebelepší obuv v&nbsp;mokrém sněhu po nějakém čase promokne.</p>
+						<p>Stejně tak je naprosto v&nbsp;pořádku mít moderní vybavení na spaní. Kvalitní karimatka a&nbsp;spacák je naprosté minimum.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light py-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12 order-lg-2 order-1">
+						<img src="./img/sections/jidlo.jpg" class="w-100 py-5 ps-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12 order-lg-1 order-2">
+						<h2>Jídlo</h2>
+						<p>Jídlo vám bude zajištěno od pátečního odpoledne do nedělního rána. Workshopy budou probíhat v&nbsp;hospodě, počítáme s&nbsp;tím, že si během nich objednáme společně oběd na vlastní náklady.</p>
+						<p>Budeme se snažit zohlednit specifické stravovací potřeby hráčů, nicméně podmínky v&nbsp;chatě jsou spíše spartánské a&nbsp;nejspíš nebude možnost vařit více variant jídel než dvě (masová a&nbsp;vegetariánská). Neměl by být ale problém ohřát si vlastní jídlo. S&nbsp;ohledem na vyplněné alergie se pokusíme sestavit jídelníček tak, aby se z&nbsp;něj zvládlo najíst co nejvíce osob, a&nbsp;cca týden předem ho zveřejníme.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/misto.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h2>Cena: XXX Kč</h2>
+						<p>Za tento poplatek od nás dostanete svoji roli v&nbsp;příběhu, který budeme psát, jídlo po celou dobu hry, místo na spaní a&nbsp;nutné rekvizity včetně zbraní.</p>
+						<p>Součástí poplatku není kostým (až na několik rekvizit u&nbsp;některých rolí).</p>
+						<p>V případě jakýchkoliv komplikací vám můžeme účastnický poplatek vrátit v&nbsp;plné výši, pokud o&nbsp;to požádáte alespoň měsíc před hrou. V&nbsp;pozdějším termínu poplatek již vrátit nemůžeme.</p>
+						<p>Pokud by pro vás byla cena překážkou, kontaktujte nás. Za pomoc před hrou či při hře vám částku můžeme snížit.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light py-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12 order-lg-2 order-1">
+						<img src="./img/sections/zbrane.jpg" class="w-100 py-5 ps-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12 order-lg-1 order-2">
+						<h2>Zbraně</h2>
+						<p>Střelné zbraně budou simulované manuálními airsoftovými zbraněmi pro jejich relativně snadnou dostupnost, vzhled a&nbsp;možnost kompetitivního boje v&nbsp;některých částech hry. Ve chvílích, kdy hrozí použití airsoftek, budou mít všichni ochranné brýle. Střelné zbraně budou zařízeny organizátory. Máte-li ale doma svou oblíbenou manuální airsoftovou pušku nebo brokovnici, napište nám, budeme rádi, pokud si ji vezmete.</p>
+						<p>Pro boj zblízka (nastane-li) budeme používat měkčené larpové zbraně v&nbsp;podobě, v&nbsp;jaké by se mohly objevit v&nbsp;herní době na daném místě.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark pt-5">
+			<a class="anchor" id="registrace"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col">
+						<h1>Registrace a&nbsp;role</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark pb-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/registrace.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h2>Přihlášení</h2>
+						<p>Přihlášení na hru bude probíhat pomocí google formuláře zveřejněného na této stránce níže.</p>
+						<p>Přihlašování spustíme v&nbsp;sobotu 1. října 2022 a&nbsp;poběží dva týdny do soboty 15. října včetně.</p>
+						<p>Všechny přihlášky zaslané v&nbsp;uvedeném termínu budou mít stejnou váhu. Hráče budeme vybírat na základě odpovědí v&nbsp;dotazníku a&nbsp;dohody v&nbsp;organizačním týmu</p>
+						<p>Hráče, které nevybereme, zařadíme jako náhradníky a&nbsp;budou kontaktováni v&nbsp;případě, že se některá z&nbsp;rolí uvolní.</p>
+						<p>Odkaz na přihlášku bude zde, až nastane pravá konjunkce hvězd.</p>
+						<a href="#" class="btn btn-primary mb-4 d-none">Odkaz na přihlašovací formulář</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark py-5">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12 order-lg-2 order-1">
+						<img src="./img/sections/prideleni.jpg" class="w-100 py-5 ps-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h2>Přidělení rolí</h2>
+						<p>Role budou přidělovány na základě odpovědí v&nbsp;přihlašovacím dotazníku.</p>
+						<p>Kompletní materiály k&nbsp;rolím budete mít do poloviny února. Ale již během podzimu a&nbsp;zimy se vám budou dostávat do ruky podpůrné materiály, které se vám budou hodit třeba při tvorbě kostýmu či shánění jiného vybavení do drsných podmínek.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-light py-5">
+			<a class="anchor" id="tym"></a>
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-12">
+						<img src="./img/sections/tym.jpg" class="w-100 py-5 pe-lg-5 px-0"/>
+					</div>
+					<div class="col-lg-7 col-12">
+						<h1>Tým</h1>
+						<p>Hru dávají dokupy lidi, které spojuje láska k&nbsp;hlavonožcům a&nbsp;k&nbsp;tajuplným příběhům o&nbsp;přežívání mimo civilizaci.</p>
+						<p>Jsou to: Shaika, Tryskochvost, Kuba Míšek, Neji a&nbsp;Nerion.</p>
+						<p>Pokud se chcete na cokoliv zeptat, můžete nám napsat na e-mailovou adresu <a href="mailto:(at)" target="_blank" class="link">xxxx@gmail.com</a> nebo na <a href="#" target="_blank" class="link">FB stránky akce</a>.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center py-lg-0 py-4">
+						<img src="./img/logo-white.svg" class="logo"/>
+					</div>
+					<div class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center">
+						<a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="Facebook" class="social align-self-end"/></a>
+						<a href="mailto:(at)" target="_blank"><img src="img/email.png" alt="E-mail" class="social align-self-end me-xl-5 me-lg-5 me-0"/></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="./js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./js/typewriter.js"></script>
+		<script type="text/javascript" src="./js/wow.js"></script>
+		<script type="text/javascript" src="./js/snow.js"></script>
+		<script type="text/javascript" src="./js/scripts.js"></script>
+	</body>
+</html>

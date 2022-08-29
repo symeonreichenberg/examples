@@ -1,0 +1,39 @@
+<xp:edit type="block" item="1Col">
+	<mj-wrapper mj-class="bg-white padding" padding-bottom="0px">
+		<mj-section>
+			<mj-column>
+				<xp:if test="#{$SEL_show_line_1Col='Anzeigen'}">
+					<mj-button mj-class="line"></mj-button>
+					<mj-spacer height="9px"/>
+				</xp:if>
+				<xp:if test="#{$heading_1Col!=''}"><mj-text mj-class="h1">$heading_1Col</mj-text></xp:if>
+				<xp:if test="#{$heading_1Col!='' and $text_1Col!=''}"><mj-spacer height="32px" css-class="h-24px"/></xp:if>
+				<xp:if test="#{$text_1Col!=''}"><mj-text mj-class="p">$text_1Col</mj-text></xp:if>
+				<xp:if test="#{$heading_1Col!='' or $text_1Col!=''}"><xp:if test="#{$IMG_1Col!='' or $cta_1Col!=''}"><mj-spacer height="24px"/></xp:if></xp:if>
+				<xp:if test="#{$IMG_1Col!=''}">
+					<xp:if test="#{$URL_1Col!=''}">
+						<xp:if test="#{$IMG_mobile_1Col!=''}">
+							<mj-raw><!--[if !mso | IE]><!-- --></mj-raw>
+							<mj-image mj-class="border-radius" src="$IMG_mobile_1Col" href="$URL_1Col" alt="$alt_1Col" css-class="d-lg-none d-block"/>
+							<mj-raw><!--<![endif]--></mj-raw>
+							<mj-image mj-class="border-radius" src="$IMG_1Col" href="$URL_1Col" alt="$alt_1Col" css-class="d-lg-block d-none"/>
+						<xp:else/>
+							<mj-image mj-class="border-radius" src="$IMG_1Col" href="$URL_1Col" alt="$alt_1Col" css-class=""/>
+						</xp:if>
+					<xp:else/>
+						<xp:if test="#{$IMG_mobile_1Col!=''}">
+							<mj-raw><!--[if !mso | IE]><!-- --></mj-raw>
+							<mj-image mj-class="border-radius" src="$IMG_mobile_1Col" alt="$alt_1Col" css-class="d-lg-none d-block"/>
+							<mj-raw><!--<![endif]--></mj-raw>
+							<mj-image mj-class="border-radius" src="$IMG_1Col" alt="$alt_1Col" css-class="d-lg-block d-none"/>
+						<xp:else/>
+							<mj-image mj-class="border-radius" src="$IMG_1Col" alt="$alt_1Col" css-class=""/>
+						</xp:if>
+					</xp:if>
+				</xp:if>
+				<xp:if test="#{$IMG_1Col!='' and $cta_1Col!='' and $URL_1Col!=''}"><mj-spacer height="24px"/></xp:if>
+				<xp:if test="#{$cta_1Col!='' and $URL_1Col!=''}"><mj-button mj-class="btn-primary-lg" href="$URL_1Col">$cta_1Col</mj-button></xp:if>
+			</mj-column>
+		</mj-section>
+	</mj-wrapper>
+</xp:edit>
